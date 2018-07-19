@@ -2,6 +2,7 @@
   "name": "ExchangeAPP",
   "version": "0.1.0",
   "private": true,
+  "author": "Matias Serpez",
   "dependencies": {
     "@material-ui/core": "^1.4.0",
     "@yuniku/make-request": "^1.5.0",

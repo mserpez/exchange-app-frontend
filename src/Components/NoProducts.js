@@ -6,22 +6,23 @@ import { withStyles } from '@material-ui/core/styles/index';
 
 const styles = theme => ({
   title: {
-    color: theme.palette.primary.main,
+    marginTop: 25,
+    fontSize: 20,
   },
 });
 
-const Title = (props) => {
+const NoProducts = (props) => {
   const { classes, value } = props;
 
   return (
-    <Typography variant="display3" align="center" className={classes.title}>
-      {value}
+    <Typography variant="display1" align="center" className={classes.title}>
+      Please, select a product to view the price of exchange, currently we have available BNB, BTX and BFX!
     </Typography>
   );
 };
 
-Title.propTypes = {
+NoProducts.propTypes = {
   value: PropTypes.string.isRequired,
 };
 
-export default withStyles(styles)(Title);
+export default withStyles(styles)(NoProducts);

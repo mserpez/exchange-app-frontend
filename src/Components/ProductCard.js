@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 const styles = {
   card: {
     minWidth: 275,
+    marginTop: 25,
   },
   bullet: {
     display: 'inline-block',
@@ -32,21 +33,36 @@ const ProductCard = (props) => {
       <Card className={classes.card}>
         <CardContent>
           <Typography variant="headline" component="h2" style={{ color }}>
-            {values.name}
-            :
-            {values.price.toFixed(8)}
+            <strong>
+              {`${values.name} :`}
+            </strong>
+            <label>
+              {values.price.toFixed(8)}
+            </label>
           </Typography>
           <Typography component="p">
-            Bid:
-            {values.bid}
+            <strong>
+              {'Bid: '}
+            </strong>
+            <label>
+              {values.bid}
+            </label>
           </Typography>
           <Typography component="p">
-            Ask:
-            {values.ask}
+            <strong>
+              {'Ask: '}
+            </strong>
+            <label>
+              {values.ask}
+            </label>
           </Typography>
           <Typography component="p">
-            Volume:
-            {values.volume}
+            <strong>
+              {'Volume: '}
+            </strong>
+            <label>
+              {values.volume}
+            </label>
           </Typography>
         </CardContent>
       </Card>

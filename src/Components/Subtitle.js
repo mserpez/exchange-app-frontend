@@ -6,22 +6,22 @@ import { withStyles } from '@material-ui/core/styles/index';
 
 const styles = theme => ({
   title: {
-    color: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
   },
 });
 
-const Title = (props) => {
+const Subtitle = (props) => {
   const { classes, value } = props;
 
   return (
-    <Typography variant="display3" align="center" className={classes.title}>
+    <Typography variant="display2" align="center" className={classes.title}>
       {value}
     </Typography>
   );
 };
 
-Title.propTypes = {
+Subtitle.propTypes = {
   value: PropTypes.string.isRequired,
 };
 
-export default withStyles(styles)(Title);
+export default withStyles(styles)(Subtitle);
