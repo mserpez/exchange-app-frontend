@@ -69,7 +69,9 @@ const renderForm = (props) => {
 
 // Handle product change function.
 const handleProductChange = (props) => {
-  props.getProductPrices(props.productSelectValue);
+  const { getProductPrices, productSelectValue } = props;
+
+  getProductPrices(productSelectValue);
 };
 
 const mapStateToProps = state => ({

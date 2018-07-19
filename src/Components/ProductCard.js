@@ -37,10 +37,6 @@ const ProductCard = (props) => {
             {values.price.toFixed(8)}
           </Typography>
           <Typography component="p">
-            Size:
-            {values.size}
-          </Typography>
-          <Typography component="p">
             Bid:
             {values.bid}
           </Typography>
