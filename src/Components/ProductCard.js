@@ -34,7 +34,7 @@ const ProductCard = (props) => {
         <CardContent>
           <Typography variant="headline" component="h2" style={{ color }}>
             <strong>
-              {`${values.name} :`}
+              {`${values.name}: `}
             </strong>
             <label>
               {values.price.toFixed(8)}
